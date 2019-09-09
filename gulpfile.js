@@ -14,7 +14,8 @@ var gulp       = require('gulp'), // Подключаем Gulp
     buffer = require('vinyl-buffer'),
     csso = require('gulp-csso'),
     merge = require('merge-stream'),
-    cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
+    // cssnano      = require('gulp-cssnano'), 
+    // Подключаем пакет для минификации CSS
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 	// var csso = require('gulp-csso');
