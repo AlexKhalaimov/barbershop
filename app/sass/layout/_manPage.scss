@@ -1,0 +1,106 @@
+.manPageHeader {
+    .sliderTopItem {
+        background-image: url(../img/manPage/man_banner.jpg);
+    }
+}
+.breadCrumbs {
+    padding: 20px 15px;
+    ul {
+        display: flex;
+        a {
+            color: $colorText;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        li {
+            &:not(:last-child) {
+                &::after {
+                    content: '\2702';
+                    display: inline-block;
+                    color: #c10f1f;
+                    padding: 0 5px;
+                }
+            }
+            &:last-child a {
+                pointer-events: none;
+            }
+        }
+    }
+}
+.sliderTopItemSidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-image: url(../img/manPage/woman_aside.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // min-width: 100px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    &__container {
+
+        position: relative;
+        // display: table;
+        display: inline-block;
+    margin: 0 15px;
+    }
+    &__title {
+        width: 300px;
+        // display: table-cell;
+        // transform: rotate(270deg);
+        // transform-origin: 0 50%;
+        transform: rotate(-90deg);
+        // transform: rotate(-90deg);
+        position: absolute;
+        right: -25px;
+        top: 50%;
+        // position: fixed;
+        // top: 0;
+        // bottom: 0;
+        // height: 50px;
+        // width: 300px;
+        // margin: auto;
+        // top: 50%;
+        // left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &::after {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-image: url(../img/icons/arrow-down.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+        }
+        a {
+            color: $colorText;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+}
+.manPage .headerCards {
+    display: none;
+}
+.barbersCard-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.manPage {
+    .barbersCard {
+        margin-bottom: 55px;
+        min-width: 190px;
+        &:not(:first-child) {
+            margin-left: 45px;
+        }
+        &:nth-child(6n) {
+            margin-left: 0;
+        }
+    }
+}
