@@ -25,5 +25,10 @@
     "merge-stream": "^2.0.0",
     "sass-rem": "^2.0.1",
     "vinyl-buffer": "^1.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0",
+    "static-eval": "^2.0.2"
   }
 }
