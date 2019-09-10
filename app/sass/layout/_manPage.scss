@@ -91,16 +91,25 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 50px;
+    margin: 0 -1%;
 }
 .manPage {
     .barbersCard {
         margin-bottom: 55px;
         min-width: 190px;
-        &:not(:first-child) {
-            margin-left: 45px;
+        width: 18%;
+        margin: 20px 1% 30px;
+        &__position {
+            margin-top: auto;
         }
-        &:nth-child(6n) {
-            margin-left: 0;
+        figure {
+            a {
+                display: block;
+            }
+            img {
+                max-width: 100%;
+                width: 100%;
+            }
         }
     }
 }

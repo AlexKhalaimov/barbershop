@@ -14,7 +14,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
     buffer = require('vinyl-buffer'),
     csso = require('gulp-csso'),
     merge = require('merge-stream'),
-    // cssnano      = require('gulp-cssnano'), 
+    // cssnano      = require('gulp-cssnano'),
     // Подключаем пакет для минификации CSS
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
@@ -46,7 +46,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
 			}
 		});
 
-		gulp.watch('app/sass/**/*.scss', style);
+		gulp.watch('app/sass/**/*.scss', style).on('change', browserSync.reload);
 		// gulp.watch('app/js/*.js', js);
 		gulp.watch('app/*.html').on('change', browserSync.reload);
 		gulp.watch('app/js/*.js').on('change', browserSync.reload);

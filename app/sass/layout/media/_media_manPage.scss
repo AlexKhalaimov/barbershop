@@ -5,15 +5,18 @@
             right: -90px;
         }
     }
-    .manPage .barbersCard:nth-child(6n) {
-        margin-left: 45px;
+    .manPage .barbersCard {
+        width: 23%;
     }
-    .manPage .barbersCard:nth-child(5n) {
-        margin-left: 0;
-    }
-    .manPage .barbersCard:last-child {
-        margin-left: 0;
-    }
+    // .manPage .barbersCard:nth-child(6n) {
+    //     margin-left: 45px;
+    // }
+    // .manPage .barbersCard:nth-child(5n) {
+    //     margin-left: 0;
+    // }
+    // .manPage .barbersCard:last-child {
+    //     margin-left: 0;
+    // }
 }
 @media (max-width:1099px) {
     .barbersCard-container {
@@ -26,14 +29,17 @@
     }
 }
 @media (max-width:991px) {
-    .manPage .barbersCard:nth-child(5n) {
-        margin-left: 45px;
-    }
-    .manPage .barbersCard:last-child {
-        margin-left: 45px;
-    }
-    .manPage .barbersCard:nth-child(3n+1) {
-        margin-left: 0;
+    // .manPage .barbersCard:nth-child(5n) {
+    //     margin-left: 45px;
+    // }
+    // .manPage .barbersCard:last-child {
+    //     margin-left: 45px;
+    // }
+    // .manPage .barbersCard:nth-child(3n+1) {
+    //     margin-left: 0;
+    // }
+    .manPage .barbersCard {
+        width: 31%;
     }
     .manPage .sliderTopItem h1 {
         font-size: 38px;
@@ -57,19 +63,35 @@
     .manPage .headerCardsItem_man {
         display: none;
     }
-    .manPage .barbersCard, .manPage .barbersCard:last-child,.manPage .barbersCard:nth-child(5n), .manPage .barbersCard:not(:first-child) {
-        margin-left: 0;
+    .manPage .barbersCard {
         width: 48%;
-        align-items: center;
     }
-    .barbersCard-container {
-        justify-content: space-between;
-    }
+    // .manPage .barbersCard, .manPage .barbersCard:last-child,.manPage .barbersCard:nth-child(5n), .manPage .barbersCard:not(:first-child) {
+    //     margin-left: 0;
+    //     width: 48%;
+    //     align-items: center;
+    // }
+    // .barbersCard-container {
+    //     justify-content: space-between;
+    // }
 }
 @media (max-width:640px) {
+    // .barbersCard-container {
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+}
+@media (max-width: 475px) {
     .barbersCard-container {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+    .manPage .barbersCard {
+        width: 98%;
+        max-width: 290px;
+        float: none;
     }
 }
 @media (max-width: 375px) {
